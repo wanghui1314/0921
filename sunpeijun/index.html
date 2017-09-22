@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" contot="width=divice-width,inal-scale=1.0,uesr-sacle=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/danshengou.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+<div class="popup-container">
+    <div class="img-flex">
+    </div>
+    <div class="div1">
+        <div class="div2">
+            <img src="images/9.png" class="img4">
+            <p class="p1">脱</p>
+            <p class="p2">单</p>
+            <p class="p3">技</p>
+            <p class="p4">巧</p>
+            <a href="#" class="a7">积极主动</a>
+            <a href="#" class="a8">个人价值观</a>
+            <a href="#" class="a9">不能苛求完美</a>
+            <a href="#" class="a10">及时沟通</a>
+            <a href="#" class="a11">适当修饰自己</a>
+            <a href="#" class="a12">兴趣爱好</a>
+            <div class="div3">
+                <img src="images/7.png" class="img2">
+                <img src="images/2.png" class="img1">
+                <img src="images/4.png" class="img3">
+                </div>
+                <div class="div4">
+                    为了保持两人交往关系的不断深入，建议两个人当中，至少要有一个人积极主动的来主导两人关系向积极有利的方向
+                    发展。切记，自以为事的认为两人关系已经稳定而疏远对方，减少自己的投入。这样子的时间久了，对方就会感觉到你的冷意而导致关系
+                    破裂。
+                </div>
+                <div class="div5">
+                    两个恋爱的人，刚开始有可能因为感性的直觉而在一起，但是稍微相处的时间一长，没有新鲜感后，就会回归理性。这时，要保持进一步
+                    的深入相处，估计得考研两个的是否有内在的共同的价值观了。大哥简单的比方来说，你说的一些观点，对方不认可，觉得不可理解，两
+                    人因此而争吵，久而久之就会破坏良好的关系。
+                </div>
+                <div class="div6">
+                    苛求完美，是人的劣根性之一。世界上本来就不存在完美，所有的人都有不足之处。苛求完美，永远不会有幸福的婚姻。
+                </div>
+                <div class="div7">
+                    两个人在相处当中，难免会因为某些问题而产生误会。如果，我们不能及时的澄清问题，发现误会，消除不必要的误解的话，往往会由于
+                    双方的猜忌而导致无端的分手，两人的关系无疾而终。
+                </div>
+                <div class="div8">
+                    一个注重自己外表的人，一个言谈举止彬彬有礼的人，才是一个受人欢迎的人。不修边幅，邋里邋遢，除非你是土豪，不然，没有人会喜
+                    欢你的。
+                </div>
+                <div class="div9">
+                    很多的恋人都是因为共同的兴趣爱好走到一起的，如学校的围棋社、话剧社、文化社、动漫社、学生会等了解并交往，也有些人在日常生
+                    活中一起旅行、跑步、打球而走到一起。为了两人人能够长期的交往，有必要相互的了解并参与一些对方感兴趣的事情当中去。
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/fragment.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var fragmentConfig = {
+            container : '.img-flex',//显示容器
+            line : 10,//多少行
+            column : 24,//多少列
+            width : 500,//显示容器的宽度
+            animeTime : 3000,//最长动画时间,图片的取值将在 animeTime*0.33 + animeTime*0.66之前取值
+            img : 'images/5.png'//图片路径
+        };
+        $(function(){
+            $(".img-flex").fadeOut(6000,function(){
+                $(".img1").fadeIn(500);
+                $(".img2").fadeIn(500);
+                $(".img3").fadeIn(500);
+            })
+
+
+        });
+
+        fragmentImg(fragmentConfig)
+    });
+    $(function () {
+        var curWidth=$('.div3').width();
+        var curHeight=$('.div3').height();
+        window.setInterval(function(){
+            $('.div3').find('img').fadeOut(500,function(){
+                $(".img4").fadeIn(1000,function(){
+                    $(".p1").css("color","blue").show(500,function(){
+                        $(".p2").css("color","pink").show(500,function(){
+                            $(".p3").css("color","greenyellow").show(500,function(){
+                                $(".p4").css("color","yellow").show(500,function(){
+                                    $(".a7").css("color","skyblue").show(500,function(){
+                                        $(".a8").css("color","silver").show(500,function(){
+                                            $(".a9").css("color","salmon").show(500,function(){
+                                                $(".a10").css("color","wheat").show(500,function(){
+                                                    $(".a11").css("color","turquoise").show(500,function(){
+                                                        $(".a12").css("color","winered").show(500,function(){
+
+                                                        })
+                                                    })
+                                                })
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                });
+            })
+
+        },8000)
+        $(function() {
+            $(".a7").click(function () {
+                $(".div4").toggle(function () {
+                    $(".div5").hide();
+                    $(".div6").hide();
+                    $(".div7").hide();
+                    $(".div8").hide();
+                    $(".div9").hide();
+
+                });
+            });
+            $(".a8").click(function () {
+                $(".div5").toggle(function () {
+                    $(".div4").hide();
+                    $(".div6").hide();
+                    $(".div7").hide();
+                    $(".div8").hide();
+                    $(".div9").hide();
+                });
+            })
+            $(".a9").click(function(){
+                $(".div6").toggle(function(){
+                    $(".div4").hide();
+                    $(".div5").hide();
+                    $(".div7").hide();
+                    $(".div8").hide();
+                    $(".div9").hide();
+                })
+            })
+            $(".a10").click(function(){
+                $(".div7").toggle(function(){
+                    $(".div4").hide();
+                    $(".div5").hide();
+                    $(".div6").hide();
+                    $(".div8").hide();
+                    $(".div9").hide();
+                })
+            })
+            $(".a11").click(function(){
+                $(".div8").toggle(function(){
+                    $(".div4").hide();
+                    $(".div5").hide();
+                    $(".div6").hide();
+                    $(".div7").hide();
+                    $(".div9").hide();
+                })
+            })
+            $(".a12").click(function(){
+                $(".div9").toggle(function(){
+                    $(".div4").hide();
+                    $(".div5").hide();
+                    $(".div6").hide();
+                    $(".div7").hide();
+                    $(".div8").hide();
+                })
+            })
+            });
+        })
+</script>
+</html>
